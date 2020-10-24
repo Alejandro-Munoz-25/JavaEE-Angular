@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  background-color: #2196f3;
+  min-height: 100vh;
+  font-family: "helvetica neue";
+  background: url(/assets/bg-pattern.png), #2196f3;
+  background: url(/assets/bg-pattern.png),
+    -webkit-gradient(linear, right top, left top, from(#2196f3), to(#6b0096));
+  background: url(/assets/bg-pattern.png),
+    linear-gradient(to right, #2196f3, #8b00c2);
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  width: 400px;
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgba(235, 235, 235, 0.9);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 4px #0000007e, 0px 0px 4px 4px #b121f3af;
+}
+
+.box h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#formTitle {
+  display: grid;
+  grid-template-columns: 90% 1fr;
+}
+#formTitle button {
+  min-height: 30px;
+  height: 30px;
+  width: 30px;
+  justify-self: end;
+  margin: 0px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 0px;
+  font-size: 20px;
+}
+#heading {
+  background-color: #682cda;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 1);
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p,
+a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+  text-decoration: none;
+}
+
+form {
+  text-align: center;
+}
+form button {
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #3fb549;
+}
+.formError {
+  border-bottom: 1px solid red;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  text-align: center;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-width: 0;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.buttonRed {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: red;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 40%;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #3f51b5;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}

@@ -28,7 +28,7 @@ public class PersonaDaoImp implements PersonaDao {
 
     @Override
     public Persona findByID(Persona persona) {
-        return (Persona) em.createNamedQuery("Persona.findByIdPersona").getParameterValue(persona.getIdPersona());
+        return em.find(Persona.class, persona.getIdPersona());
     }
 
     @Override

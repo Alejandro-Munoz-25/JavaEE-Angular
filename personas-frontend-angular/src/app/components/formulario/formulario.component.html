@@ -1,0 +1,19 @@
+<div class="box" *ngIf="exist">
+  <div id="formTitle">
+    <h2>Add Person</h2>
+    <button class="buttonRed boxForm" (click)="close()">X</button>
+  </div>
+
+  <form id="item" (ngSubmit)="formh.form.valid&&onSavePerson()" #formh="ngForm">
+    <label for="name">Name</label>
+    <input type="text" name="name" placeholder="Name" #fname="ngModel" [(ngModel)]="nombreInput" required>
+    <span class="formError" *ngIf=" fname.touched&&!fname.valid">Name is required</span>
+    <br>
+    <label for="lastname">Lastname</label>
+    <input type="text" name="lastname" placeholder="LastName" #flastname="ngModel" [(ngModel)]="apellidoInput" required>
+    <span class="formError" *ngIf=" flastname.touched&&!flastname.valid">Last Name is required</span>
+    <br>
+    <button type="submit" style="cursor: pointer;">+</button>
+    <button *ngIf="idPersona!=null" class="buttonRed" (click)="delete(idPersona)">-</button>
+  </form>
+</div>

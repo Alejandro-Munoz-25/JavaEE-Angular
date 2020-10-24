@@ -1,0 +1,16 @@
+<div style="text-align:center">
+  <button style="cursor: pointer;" (click)="goAdd()">+</button>
+</div>
+<div class="box">
+  <div class="item" *ngFor="let persona of personas">
+    <a [routerLink]="[ '/personas', persona.idPersona ]">
+      <ul>
+        <li>
+          {{persona.idPersona+' '+ persona.nombre+' '+persona.apellido}}
+        </li>
+      </ul>
+    </a>
+  </div>
+</div>
+<!-- Formulario Component -->
+<router-outlet></router-outlet>
